@@ -36,7 +36,7 @@ providerRouter.delete('/delete/name/:name', async (req,res) => {
 })
 
 providerRouter.post('/new', async (req,res) => {
-    const newProvider = await Provider.newProvider(req.body);
+    const newProvider = awaitProvider.newProvider(req.body);
     console.log(newProvider)
     res.status(newProvider.status).json(newProvider).send();
 })
