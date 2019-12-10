@@ -1,5 +1,3 @@
-import { models } from "mongoose"
-
 const providers = [
     {
         id: 1,
