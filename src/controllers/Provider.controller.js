@@ -56,7 +56,7 @@ class ProviderControl
     async updateById(id, body)
     {
         return ProviderModel.findOneAndUpdate(
-            {id: id},
+            {_id: id},
             body,
             {new: true}
         )
