@@ -31,15 +31,15 @@ class ProviderControl
         return {status: status, msg: msg};
     }
 
-    async deleteByID(id)
+    async deleteByID(_id)
     {
-        const delRes = await ProviderModel.deleteOne({id: id});
+        const delRes = await ProviderModel.deleteOne({_id: _id});
         
         if(delRes.deletedCount > 0)
         {
-            return `Provider ${id} deleted`
+            return `Provider ${_id} deleted`
         }
-        return `Provider ${id} not deleted`
+        return `Provider ${_id} not deleted`
     }
 
     async deleteByName(name)
@@ -69,7 +69,7 @@ class ProviderControl
 
     async findOne(id)
     {
-        return ProviderModel.findOne({id: id});
+        return ProviderModel.findOne({_id: id});
     }
 
     async findOneByName(name)

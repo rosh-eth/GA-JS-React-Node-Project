@@ -17,7 +17,7 @@ providerRouter.get('/findAll', async (req, res) => {
     res.json(findAll);
 });
 
-providerRouter.get('/find/id/:id', async (req, res) => {
+providerRouter.get('/find/:id', async (req, res) => {
     const findOne = await Provider.findOne(req.params.id);
     res.json(findOne);
 })
@@ -27,7 +27,7 @@ providerRouter.get('/find/name/:name', async (req, res) => {
     res.json(findOneByName);
 })
 
-providerRouter.delete('/delete/id/:id', async (req,res) => {
+providerRouter.delete('/delete/:id', async (req,res) => {
     res.json(await Provider.deleteByID(req.params.id))
 })
 
@@ -36,7 +36,7 @@ providerRouter.delete('/delete/name/:name', async (req,res) => {
 })
 
 providerRouter.post('/new', async (req,res) => {
-    const newProvider = awaitProvider.newProvider(req.body);
+    const newProvider = await Provider.newProvider(req.body);
     console.log(newProvider)
     res.status(newProvider.status).json(newProvider).send();
 })

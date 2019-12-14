@@ -5,11 +5,6 @@ const Schema = mongoose.Schema; // create a shorthand for the mongoose Schema co
 // This will define the shape of the documents in the collection
 // https://mongoosejs.com/docs/guide.html
 const providerSchema = new Schema({
-  id: {
-    type: String,
-    required: true,
-    unique: true
-  },  
   name: String,
   address: String,
   phone: String,

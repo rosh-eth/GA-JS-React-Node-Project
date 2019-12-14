@@ -1,6 +1,6 @@
 const providers = [
     {
-        id: 1,
+        
         name: "Provider 1",
         address: "Address - Provider 1",
         phone: "1800 Provider 1",
@@ -12,7 +12,7 @@ const providers = [
     ]
     }, 
     {
-        id: 2,
+        
         name: "Provider 2",
         address: "Address - Provider 2",
         phone: "1800 Provider 2",
@@ -24,7 +24,7 @@ const providers = [
     ]
     },
     {
-        id: 3,
+        
         name: "Provider 3",
         address: "Address - Provider 3",
         phone: "1800 Provider 3",
