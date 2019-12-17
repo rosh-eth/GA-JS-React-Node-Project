@@ -28,3 +28,8 @@ For example the blog app we have been working on in class meets this requirement
     - Project run instructions
     - Issues you ran into during development
     - Improvements you would like to make in the future
+
+
+### Install Instructions
+- npm install
+- Express: npx nodemon index.html in root folder
