@@ -3,6 +3,13 @@ const providerRouter = express.Router();
 const ProviderCtrl = require('../controllers/Provider.controller');
 const Provider = new ProviderCtrl();
 
+// providerRouter.use((req, res, next) => {
+//     if(!req.session.user) {
+//         return res.status(403).json({status: "auth required"});
+//     }
+//     next();
+// })
+
 providerRouter.get('/', (req, res) => {
     res.send("Provider works");
 });
